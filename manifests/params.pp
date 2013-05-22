@@ -10,8 +10,7 @@ class krb5::params {
   ]
   $conffile = '/etc/krb5.conf'
   $service = $::osfamily ? {
-    'Debian' => 'krb5',
-    'RedHat' => 'krb5',
+    'RedHat' => 'oddjobd',
     default  => fail('unsupported platform')
   }
 }

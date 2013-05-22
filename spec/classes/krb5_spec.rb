@@ -19,6 +19,7 @@ describe 'krb5' do
     it { should create_package('pam_krb5') }
     it { should create_package('oddjob-mkhomedir') }
     it { should create_package('sssd-client') }
+    it { should create_service('oddjobd') }
     it { should create_file('/etc/krb5.conf') }
     it {
       should create_file('/etc/krb5.conf')\

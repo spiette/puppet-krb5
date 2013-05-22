@@ -32,6 +32,7 @@ class krb5 (
   ) {
   anchor { "${module_name}::begin": } ->
   class {"${module_name}::install": } ->
+  class {"${module_name}::service": } ->
   class {"${module_name}::config": } ~>
   anchor { "${module_name}::end": }
 }
