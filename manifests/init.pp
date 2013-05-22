@@ -28,6 +28,7 @@ class krb5 (
   $default_realm = undef,
   $kdc = undef,
   $admin_server = $kdc,
+  $sssd = false,
   ) {
   anchor { "${module_name}::begin": } ->
   class {"${module_name}::install": } ->

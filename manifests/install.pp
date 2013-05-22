@@ -6,4 +6,9 @@ class krb5::install {
   package { $krb5::params::pkgname:
     ensure => present,
   }
+  if krb5::sssd {
+    package { 'sssd-client':
+      ensure => present,
+    }
+  }
 }

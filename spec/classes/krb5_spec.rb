@@ -8,7 +8,8 @@ describe 'krb5' do
     let(:params) {{
       :default_realm => 'MYORG.LOCAL',
       :kdc => 'kdc.myorg.local',
-      :admin_server => 'admin.myorg.local'
+      :admin_server => 'admin.myorg.local',
+      :sssd => 'true'
     }}
     let(:facts) { { :osfamily => osfamily } }
 
@@ -17,6 +18,7 @@ describe 'krb5' do
     it { should create_package('krb5-workstation') }
     it { should create_package('pam_krb5') }
     it { should create_package('oddjob-mkhomedir') }
+    it { should create_package('sssd-client') }
     it { should create_file('/etc/krb5.conf') }
     it {
       should create_file('/etc/krb5.conf')\
