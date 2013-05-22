@@ -2,7 +2,7 @@
 
 This is a krb5 puppet module. It is quite basic at this point.
 
-[![Build Status](https://secure.travis-ci.org/spiette/puppet-ssh.png?branch=master)](http://travis-ci.org/spiette/puppet-ssh)
+[![Build Status](https://secure.travis-ci.org/spiette/puppet-krb5.png?branch=master)](http://travis-ci.org/spiette/puppet-krb5)
 
 # License
 
