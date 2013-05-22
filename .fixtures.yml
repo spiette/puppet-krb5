@@ -1,0 +1,6 @@
+fixtures:
+  repositories:
+    stdlib: "git://github.com/puppetlabs/puppetlabs-stdlib.git"
+
+  symlinks:
+    krb5: "#{source_dir}"
